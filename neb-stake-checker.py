@@ -31,13 +31,9 @@ class NeblioStakeChecker:
         headers = "\r\n".join(headers)
 
         session = smtplib.SMTP(config.SMTP_SERVER, config.SMTP_PORT)
-
         session.ehlo()
         session.starttls()
-        session.ehlo
-
         session.login(config.GMAIL_USERNAME, config.GMAIL_PASSWORD)
-
         session.sendmail(config.GMAIL_USERNAME, recipient, headers + "\r\n\r\n" + body)
         session.quit()
 
