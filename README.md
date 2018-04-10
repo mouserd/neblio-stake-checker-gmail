@@ -34,9 +34,9 @@ sudo apt-get install jq
 Once you have satisfied all of the [pre-requisites](#pre-requisites), simply copy both the `neb-stake-checker.py` and `config.py` scripts
 to your `pi` users home directory (`/home/pi`).  Edit the `config.py` python script with the following:
 
-1. Replace the value corresponding to `GMAIL_USERNAME` with your real gmail username/email address
-2. Replace the value corresponding to `GMAIL_PASSWORD` with your real gmail password. *Note:* If your gmail account uses 2-Factor Authentication
-    then see [Using with Google 2-Factor Authentication](#using-with-google-2-factor-authentication)
+1. Replace the value corresponding to `GMAIL_USERNAME` with your real Gmail username/email address
+2. Replace the value corresponding to `GMAIL_PASSWORD` with your real Gmail password. *Note:* If your Gmail account uses 2-Step Verification
+    then see [Using with Google 2-Factor Authentication](#using-with-google-2-step-verification-(2fa)) to generate a custom token
 
 To test that your Neblio Stake Checker is working, start the main python script by running the Python script from your Raspberry Pi 
 terminal/ssh session:
@@ -46,7 +46,7 @@ python /home/pi/neb-stake-checker.py
 ```
 
 The first time this runs, if everything is setup correctly, you should receive a 
-email to demonstrate that it has been configured correctly:
+email to demonstrate that everything is working:
 
 <table width="60%" align="center" padding=0 margin=0>
     <tr>
@@ -56,16 +56,6 @@ email to demonstrate that it has been configured correctly:
         </td>
     </tr>
 </table>
-
-### Using with Google 2-Factor Authentication
-
-If your google account uses 2-Factor Authentication (2FA) then there is some additional steps required to ensure that the python script is
-a trusted application.  To setup the trusted application you need to:
-
-1. Log-in into Gmail with your account
-2. Navigate to https://security.google.com/settings/security/apppasswords
-3. In 'select app' choose 'custom', give it an arbitrary name and press generate, this will provide you with a unique 16 characters token
-4. Replace the `GMAIL_PASSWORD` in the `config.py` with this 16 character token
 
 ### Automatic Scheduling
 
@@ -83,6 +73,16 @@ In the resulting file, add the following to the bottom, making sure to leave a b
 Save and exit your cron (Ctrl+X if using nano).
 
 Now all you need to do is sit back and wait to be notified of your next stake! :rocket:
+
+### Using with Google 2-Step Verification (2FA)
+
+If your google account uses 2-Step Verification (2FA) then there is some additional steps required to ensure that the python script is
+a trusted application.  To setup the trusted application you need to:
+
+1. Log-in into Gmail with your account
+2. Navigate to https://security.google.com/settings/security/apppasswords
+3. In 'select app' choose 'custom', give it an arbitrary name and press generate, this will provide you with a unique 16 characters token
+4. Replace the `GMAIL_PASSWORD` in the `config.py` with this 16 character token
 
 ## Donate / Tip :dollar:
 
