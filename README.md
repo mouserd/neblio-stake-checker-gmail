@@ -36,7 +36,7 @@ to your `pi` users home directory (`/home/pi`).  Edit the `config.py` python scr
 
 1. Replace the value corresponding to `GMAIL_USERNAME` with your real Gmail username/email address
 2. Replace the value corresponding to `GMAIL_PASSWORD` with your real Gmail password. *Note:* If your Gmail account uses 2-Step Verification
-    then see [Using with Google 2-Factor Authentication](#using-with-google-2-step-verification-(2fa)) to generate a custom token
+    then see [Using with Google 2-Step Verification](#using-with-google-2-step-verification) to generate a custom token
 
 To test that your Neblio Stake Checker is working, start the main python script by running the Python script from your Raspberry Pi 
 terminal/ssh session:
@@ -74,7 +74,7 @@ Save and exit your cron (Ctrl+X if using nano).
 
 Now all you need to do is sit back and wait to be notified of your next stake! :rocket:
 
-### Using with Google 2-Step Verification (2FA)
+### Using with Google 2-Step Verification
 
 If your google account uses 2-Step Verification (2FA) then there is some additional steps required to ensure that the python script is
 a trusted application.  To setup the trusted application you need to:
