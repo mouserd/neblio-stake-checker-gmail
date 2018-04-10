@@ -8,7 +8,7 @@ has earned a new stake.
     <tr>
         <td style="padding:0">
             <img src="https://github.com/mouserd/neblio-stake-checker-gmail/blob/master/assets/neblio-stake-checker-example-nofication.png" 
-                title="Neblio Stake Checker" alt="Neblio Stake Checker" width="520" />
+                title="Neblio Stake Checker" alt="Neblio Stake Checker" />
         </td>
     </tr>
 </table>
@@ -52,7 +52,7 @@ email to demonstrate that it has been configured correctly:
     <tr>
         <td style="padding:0">
             <img src="https://github.com/mouserd/neblio-stake-checker-gmail/blob/master/assets/neblio-stake-checker-setup-success.png" 
-                title="Neblio Stake Checker" alt="Neblio Stake Checker" width="520" />
+                title="Neblio Stake Checker" alt="Neblio Stake Checker" />
         </td>
     </tr>
 </table>
