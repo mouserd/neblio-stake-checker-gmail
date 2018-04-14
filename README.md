@@ -26,6 +26,9 @@ In addition to Python, we also need a utility called [jq](https://stedolan.githu
 sudo apt-get install jq
 ```
 
+This project also **requires** the `nebliod` wallet to be installed on your Raspberry Pi.  `nebliod` is a command-line version of the Neblio 
+wallet that allows for a transaction history to be queried.  Instructions for installing `nebliod` can be found on the 
+[official Neblio github page](https://github.com/NeblioTeam/NEBL-Pi/releases).
 
 ## Installation 
 
